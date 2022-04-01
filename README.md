@@ -1,0 +1,1 @@
+# Dictionarity-app
