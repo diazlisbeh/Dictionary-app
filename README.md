@@ -1,1 +1,3 @@
-# Dictionarity-app
+# Dictionary-app
+
+
