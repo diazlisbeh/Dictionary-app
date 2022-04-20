@@ -5,10 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/styles/styles.css">
-  <title>Document</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<title>Dictionary</title>
 </head>
 <body>
-  <button id="boton"></button>
+  <nav>
+    <h3>Dictionary</h3>
+    <form>
+      <label for="input-text"></label>
+    <input placeholder="type a word" type="text" id="input-text">
+    <button>search</button>
+    </form>
+  </nav> 
+
+  <main>
+    <div class="word-container">
+    <h2 class="word-container__word">hello</h2>
+    <ion-icon class="word-container__icon" name="wifi-outline"></ion-icon>
+    <p class="word-container__phonectics">Phonetics</p>
+    </div>
+     <div class="word-body">
+      <!-- <h3 class="word-body__partOfSeech"></h3>
+      <ul class="word-body__meanings-list">
+        <li></li>
+      </ul> -->
+
+    </div> 
+
+  </main>
   <script src="./src/index.js" type="module"></script>
 </body>
 </html>
