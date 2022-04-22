@@ -7,3 +7,7 @@ body{
   width: 100px;
   height: 50px;
 }
+audio::-webkit-media-controls-panel{
+  background-color: red;
+  
+}

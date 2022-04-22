@@ -3,7 +3,7 @@ export default async function getAudio(word){
     let resolve;
     await fetch(url)
         .then((res=>res.json()))
-        .then((data=>resolve = data[0].phonetics[0].audio))
+        .then((data=>resolve = data[0].phonetics[1].audio))
         .catch(err=> console.log(err))
 
         return resolve

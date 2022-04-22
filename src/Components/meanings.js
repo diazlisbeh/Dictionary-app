@@ -2,7 +2,7 @@ import getMean from '../utils/getMean.js'
 
 
 
-const wordBody = document.querySelector(".word-body");
+const wordBody = document.querySelector("#word-body")
 
 
 
