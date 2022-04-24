@@ -1,13 +1,117 @@
 body{
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
 }
-
+:root{
+  --font:'Roboto', sans-serif;
+}
 
 #boton{
   background-color: azure;
   width: 100px;
   height: 50px;
 }
+
+header{
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+
+.nav-title{
+  flex-grow: 2;
+  margin: 0;
+  margin-top: .5rem;
+  font-size: x-large;
+  font-family: var(--font);
+}
+
+
+
+.nav-input{
+  height: 2rem;
+  width: 8rem;
+  margin-top: 5px;
+  margin-right: 5px;
+  /* border-radius: 2px; */
+  border: 0px solid;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px rgb(109, 109, 109);
+}
+
+
+.nav-input::placeholder{
+  font-family: var(--font);
+}
+
+.nav-button{
+height: 2.4rem;
+  margin-top: 5px;
+  background-color: white;
+  border: 0;
+  width: 3rem;
+
+}
+.nav-button:first-child{
+   width: 1rem; 
+}
+
+
+
+.word-container{
+  display: flex;
+  flex-direction: column;
+}
+.word-phonetics{
+  display: flex;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.word-container__word{
+  font-size: xx-large;
+  align-self: center;
+
+}
+
+.word-container__word::first-letter{
+  text-transform: uppercase;
+}
+
+.word-container__icon{
+  font-size: x-large;
+  align-self: center;
+  transform: rotate(0.25turn);
+}
+
 audio::-webkit-media-controls-panel{
-  background-color: red;
+  background-color: white;
   
 }
+audio{
+  display: none;
+}
+.word-container__phonectics{
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

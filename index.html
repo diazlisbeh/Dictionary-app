@@ -5,23 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <title>Dictionary</title>
 </head>
 <body>
   <header>
-  <nav>
-    <h3>Dictionary</h3>
+  <nav class="nav">
+    <h3 class="nav-title">Dictionary</h3>
       <label for="input-text"></label>
-    <input placeholder="type a word" type="text" id="input-text">
-    <button id="search-button" type="search">search</button>
+    <input placeholder="Type a word" type="text" id="input-text" class="nav-input">
+    <button id="search-button" type="search" class="nav-button"><img src="./src/icons/search-sharp.svg"></button>
   </nav> 
   </header>
   <main>
     <div class="word-container">
+      <div class="word-phonetics">
     <h2 class="word-container__word">hello</h2>
-    <ion-icon class="word-container__icon" name="wifi-outline"><audio controls src="https://api.dictionaryapi.dev/media/pronunciations/en/know-uk.mp3"></audio></ion-icon>
+    <ion-icon class="word-container__icon" name="wifi-outline"></ion-icon>
+      </div>
     <audio controls class="audio">
 </audio>
     <p class="word-container__phonectics">Phonetics</p>

@@ -13,7 +13,6 @@ export default async function meanings(word){
     .then(res => resolve = res)
     .catch(err => console.log(err))
         
-    
     resolve.map(i =>{
       
         let part = document.createElement("h3");

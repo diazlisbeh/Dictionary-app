@@ -19,29 +19,25 @@ function removeAllChidrens(){
 search.addEventListener("click",()=>{
     word = input.value
     console.log(input.value)
-    screnWord.textContent = word
+    screnWord.textContent = input.value
     removeAllChidrens()
+    
     getApi(word)
-    .then(res => phonetics.textContent = res[0].phonetic)
-    .then(res=>screnWord.textContent = res[0].word)
+    .then(res =>phonetics.textContent = res[0].phonetics[1].text)
     .catch(err=>console.log(err))
-
+    
     getAudio(word)
     .then(res => audio.setAttribute("src",res))
+    
     meanings(word)
 
 })
 
-getAudio(word)
-.then(res => audio.setAttribute("src",res))
-
-getApi(word)
-.then(res=>screnWord.textContent = res[0].word)
-.catch(err=>console.log(err))
+screnWord.textContent = word;
 
 
 getApi(word)
-.then(res => phonetics.textContent = res[0].phonetic)
+.then(res =>phonetics.textContent = res[0].phonetics[1].text)
 .catch(err=>console.log(err))
 
 
