@@ -103,6 +103,26 @@ audio{
 }
 
 
+.word-body{
+
+}
+.word-body__definition{
+}
+
+.part-of-speech{
+
+  text-transform: capitalize;
+}
+.definition-paragraf{
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+
+
+/* .part-of-speech::first-letter{
+  text-transform: ;
+} */
 
 
 
